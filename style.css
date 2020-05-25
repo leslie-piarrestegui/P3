@@ -6,6 +6,10 @@ body {
     width: 100%;
 }
 
+h1 {
+    text-align: center; /*Menu 1 à 4*/
+}
+
 .header{
     background: #669999;
     color: rgb(255,193,7);
@@ -102,6 +106,10 @@ footer {
     padding-top: 1.1rem;
     margin-top: 1.5rem;
     font-size: 23px;
+}
+
+a {
+    text-decoration: none; color: rgb(255,193,7);
 }
 
 @media (max-width: 599px) {
