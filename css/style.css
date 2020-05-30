@@ -9,6 +9,7 @@ body {
 h1, h2 {
     text-align: center; /*Menu 1 à 4*/
 }
+
 h3 {
     display: flex;
     justify-content: space-between;
@@ -27,50 +28,14 @@ i {
     text-align: center;
 }
 
-p {
-    display:flex;
-    justify-content: space-between;
-}
-
-p span {
-    margin-left: 1rem;
-    font-weight: bold;
-}
-
-.descriptif-menu {
-    margin-bottom: 2.5rem;
-}
-
-h3::before {
-    display:inline-block;
-    vertical-align: middle;
-    height:.2rem;
-    width:25%;
-    background: black;
-    content:"";
-    margin-top: .6rem;
-    margin-right: 1rem;
-}
-
-h3::after {
-    display:inline-block;
-    vertical-align: middle;
-    height:.2rem;
-    width:25%;
-    background: black;
-    content:"";
-    margin-top: .6rem;
-    margin-left: 1rem;
-}
-
-
 .header{
     background: #669999;
     color: rgb(255,193,7);
     font-size: 4rem;
     padding-bottom: 2rem;
     padding-top: 2rem;
-    text-align: center;  
+    text-align: center; 
+    margin-bottom: 3rem; 
 }
 
 .header p {
@@ -91,30 +56,55 @@ h3::after {
     margin-top: 3.5rem;
     height: 10rem;
     width: 50%;
-    cursor: pointer;
-    transform: scale(1);
-    transition: transform 1s;
     box-shadow: 0px 0px 6px 0px grey;
 }
 
-.menu:hover{
-    transform: scale(1.2);
-}
-
-.menu1{
+.menu1 {
     background: #ffcccc;
+    color: #330000;
+    cursor: pointer;
 }
 
-.menu2{
-    background: red;
+.menu2 {
+    background: #ffffff;
+    color: #cc6600;
+    cursor: pointer;
 }
 
-.menu3{
-    background: rebeccapurple;
+.menu3 {
+    background: #ffffff;
+    cursor: pointer;
 }
 
-.menu4{
-    background: royalblue;
+.menu4 {
+    background: #ffffff;
+    cursor: pointer;
+}
+.menu1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    transform: scale(1);
+    transition: transform 1s;
+}
+
+.menu a{
+    text-decoration: none; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(255,193,7);
+    margin: auto;
+}
+
+.menu a:hover{
+    transform: scale(1.5);
+    opacity: 0.50;
+}
+
+a span {
+    margin-top: 1rem;
 }
 
 .prochainement {
@@ -156,23 +146,49 @@ footer {
     position: sticky;
     bottom: 0;
     left: 0;
-    justify-content: space-between;
     background: #669999;
-    color: rgb(255,193,7);
     height: 3rem;
-    padding-left: 1.2rem;
-    padding-right: 1.2rem;
-    padding-top: 1.1rem;
     margin-top: 1.5rem;
-    font-size: 23px;
 }
 
-a {
-    text-decoration: none; color: rgb(255,193,7);
+footer a {
+    text-decoration: none; 
+    font-size: 23px;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(255,193,7);
+    margin: auto;
 }
+
+footer a:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+}
+
 
 @media (max-width: 599px) {
 
     .contenu {
         flex-direction: column;
     }
+}
