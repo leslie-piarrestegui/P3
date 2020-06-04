@@ -6,26 +6,12 @@ body {
     width: 100%;
 }
 
-h1, h2 {
-    text-align: center; /*Menu 1 à 4*/
-}
-
-h3 {
-    display: flex;
-    justify-content: space-between;
-}
-
 .carte{
     background-color: #ffcccc;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     padding: 1rem;
-}
-
-i {
-    width: 100%;
-    text-align: center;
 }
 
 .header{
@@ -61,30 +47,56 @@ i {
 
 .menu1 {
     background: #ffcccc;
+    font-family: 'Rochester', cursive;
     color: #330000;
     cursor: pointer;
+    transform: scale(1);
+    transition: transform 1s;
 }
 
-.menu2 {
-    background: #ffffff;
-    color: #cc6600;
-    cursor: pointer;
-}
-
-.menu3 {
-    background: #ffffff;
-    cursor: pointer;
-}
-
-.menu4 {
-    background: #ffffff;
-    cursor: pointer;
-}
-.menu1 {
-    display: flex;
-    flex-direction: column;
+i {
+    width: 100%;
     text-align: center;
-    margin: auto;
+    margin-bottom: 1rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(left, #ff6666, #ff9966);
+}
+
+.menu2 * {
+    background: #ffffff;
+    font-family: 'PT Serif', serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(left, #cc6600, #996699, #6633cc);
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 1s;
+}
+
+span .menu2 {
+    font-family: 'PT Serif', serif;
+    color: #cc6600;
+}
+
+.menu3 * {
+    background: #ffffff;
+    font-family: 'Dancing Script', cursive;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(left, #0033cc, #0066ff, #3399ff);
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 1s;
+}
+
+.menu4 * {
+    background: #ffffff;
+    font-family: 'Kaushan Script', cursive;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(left, #339933, #99cc66, #ccff66);
+    cursor: pointer;
     transform: scale(1);
     transition: transform 1s;
 }
@@ -94,7 +106,6 @@ i {
     display: flex;
     flex-direction: column;
     text-align: center;
-    color: rgb(255,193,7);
     margin: auto;
 }
 

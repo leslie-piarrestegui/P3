@@ -13,18 +13,48 @@
 }
 h1 {
     text-align: center;
+    font-family: 'Dancing Script', cursive;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: -webkit-linear-gradient(left, #0033cc, #0066ff, #3399ff, white);
 }
 
-h3 {
-    display: flex;
-    justify-content: space-between;
-}
-
+h2 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    cursor: pointer;
+  }
+  
+  h2::after {
+    display:inline-block;
+    content:"";
+    height:.1rem;
+    width:100%;
+    background: none;     
+  }
+  
+  h2:hover::after {
+    background:black;
+    animation: animate 2s linear infinite;
+  }
+  
+  @keyframes animate{
+    0% {
+    transform:scaleX(0);
+    transform-origin: left;
+    }
+    50%
+    {
+      transform:scaleX(1);
+    transform-origin: left;
+    }
+    100%  
+   }
 .carte{
     background-color: #fff;
+    font-family: 'Dancing Script', cursive;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -44,101 +74,6 @@ p span {
 .descriptif-menu {
     margin-bottom: 2.5rem;
 }
-
-.section1 h3::before {
-    display:inline-block;
-    margin-top: .6rem;
-    margin-right: 1rem;
-    vertical-align: middle;
-    content:"";
-    height:.2rem;
-    width:25%;
-    background: #0033cc;
-    animation: animate 4s linear infinite;     
-}
-
-.section1 h3::after {
-    display:inline-block;
-    margin-top: .6rem;
-    margin-left: 1rem;
-    vertical-align: middle;
-    content:"";
-    height:.2rem;
-    width:25%;
-    background: #0033cc;
-    animation: animate 4s linear infinite;      
-}
-.section2 h3::before {
-    display:inline-block;
-    margin-top: .6rem;
-    margin-right: 1rem;
-    vertical-align: middle;
-    content:"";
-    height:.2rem;
-    width:25%;
-    background: #0066ff;
-    animation: animate 4s linear infinite;     
-}
-
-.section2 h3::after {
-    display:inline-block;
-    margin-top: .6rem;
-    margin-left: 1rem;
-    vertical-align: middle;
-    content:"";
-    height:.2rem;
-    width:25%;
-    background: #0066ff;
-    animation: animate 4s linear infinite;      
-}
-.section3 h3::before {
-    display:inline-block;
-    margin-top: .6rem;
-    margin-right: 1rem;
-    vertical-align: middle;
-    content:"";
-    height:.2rem;
-    width:25%;
-    background: #3399ff;
-    animation: animate 4s linear infinite;     
-}
-
-.section3 h3::after {
-    display:inline-block;
-    margin-top: .6rem;
-    margin-left: 1rem;
-    vertical-align: middle;
-    content:"";
-    height:.2rem;
-    width:25%;
-    background: #3399ff;
-    animation: animate 4s linear infinite;      
-}
-
-
-@keyframes animate{
-    0% {
-    transform:scaleX(0);
-    transform-origin: left;
-    }
-    50%
-    {
-      transform:scaleX(1);
-    transform-origin: left;
-    }
-    50.1%
-    {
-      transform:scaleX(1);
-    transform-origin: right;
-      
-    }
-    100%
-    {
-      transform:scaleX(0);
-    transform-origin: right;
-      
-    }
-  } 
 
 footer {
     display:flex;
