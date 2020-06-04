@@ -1,5 +1,6 @@
 .header{
-    background: #669999;
+    background: #579C87;
+    font-family: 'Montserrat', sans-serif;
     color: rgb(255,193,7);
     font-size: 4rem;
     padding-bottom: 2rem;
@@ -77,7 +78,6 @@ h2:hover::after {
     transform:scaleX(1);
   transform-origin: left;
   }
-  100%  
  }
 
 footer {
@@ -85,13 +85,14 @@ footer {
     position: sticky;
     bottom: 0;
     left: 0;
-    background: #669999;
+    background: #579C87;
     height: 3rem;
     margin-top: 1.5rem;
 }
 
 footer a {
-    text-decoration: none; 
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif; 
     font-size: 23px;
     display: flex;
     justify-content: space-between;

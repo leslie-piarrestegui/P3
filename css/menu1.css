@@ -2,20 +2,22 @@ body *{
   box-sizing: border-box;
 }
 .header{
-    background: #669999;
-    color: rgb(255,193,7);
-    font-size: 4rem;
-    padding-bottom: 2rem;
-    padding-top: 2rem;
-    text-align: center;  
+  background: #579C87;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(255,193,7);
+  font-size: 4rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  text-align: center;  
 }
 
 .header p {
-    margin: 0;
-    font-weight: bold;
+  margin: 0;
+  font-weight: bold;
 }
 h1{
-    text-align: center;
+  text-align: center;
+  margin-bottom: 4rem;
 }
 h2 {
   text-align: center;
@@ -35,79 +37,88 @@ h2::after {
 
 h2:hover::after {
   background:black;
-  animation: animate 2s linear infinite;
+  animation: animate 1.7s linear infinite;
 }
 
-@keyframes animate{
+@keyframes animate {
   0% {
   transform:scaleX(0);
   transform-origin: left;
   }
-  50%
+  100%
   {
     transform:scaleX(1);
   transform-origin: left;
   }
-  100%  
- }
+}
 
 .carte {
-    background-color: #ffcccc;
-    color: #330000;
-    font-family: 'Rochester', cursive;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3rem;
-    padding: 1rem;
+  background-color: #FCDFDB;
+  color: #330000;
+  font-family: 'Rochester', cursive;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  padding: 2rem;
 }
 
 i {
-    width: 100%;
-    text-align: center;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: -webkit-linear-gradient(left, #ff6666, #ff9966);
+  width: 100%;
+  text-align: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: -webkit-linear-gradient(left, #ff6666, #ff9966);
 }
 
 .p {
-    display:flex;
-    justify-content: space-between;
+  display:flex;
+  justify-content: space-between;
 }
 
 p span {
-    margin-left: 1rem;
-    font-weight: bold;
+  margin-left: 1rem;
+  font-weight: bold;
 }
 
 .descriptif-menu {
-    margin-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
+.basDePage {
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.basDePage span {
+  margin-left: 1rem;
+}
 footer {
-    display:flex;
-    position: sticky;
-    bottom: 0;
-    left: 0;
-    background: #669999;
-    height: 3rem;
-    margin-top: 1.5rem;
+  display:flex;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  background: #579C87;
+  height: 3rem;
+  margin-top: 1.5rem;
 }
 
 footer a {
-    text-decoration: none; 
-    font-size: 23px;
-    display: flex;
-    justify-content: space-between;
-    color: rgb(255,193,7);
-    margin: auto;
+  text-decoration: none; 
+  font-family: 'Montserrat', sans-serif;
+  font-size: 23px;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(255,193,7);
+  margin: auto;
 }
 
 footer a:hover {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
 }
 
 @keyframes shake {
