@@ -51,6 +51,31 @@ h2 {
     } 
    }
 
+   .ligne {
+    width: 35%;
+  }
+  
+  .separateur {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  
+  .section1 .line1 {
+    height: 5px;
+    background: #cc6600;
+  }
+
+  .section2 .line1 {
+    height: 5px;
+    background: #996699;
+  }
+
+  .section3 .line1 {
+    height: 5px;
+    background: #6633cc;
+  }
+
 .carte{
     font-family: 'PT Serif', serif;
     background-color: #fff;

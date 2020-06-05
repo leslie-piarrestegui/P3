@@ -23,6 +23,25 @@ h3 {
     display: flex;
     justify-content: space-between;
 }
+.ligne {
+  width: 35%;
+}
+
+.separateur {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.line1 {
+  height: 5px;
+  background-image: -webkit-linear-gradient(left, #339933, #99cc66, #ccff66);
+}
+
+.line2 {
+  height: 5px;
+  background-image: -webkit-linear-gradient(right, #339933, #99cc66, #ccff66);
+}
 
 .carte{
     background-color: #fff;

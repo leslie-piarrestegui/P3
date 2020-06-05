@@ -52,6 +52,32 @@ h2 {
     transform-origin: left;
     }
    }
+
+   .ligne {
+    width: 35%;
+  }
+  
+  .separateur {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  
+  .section1 .line1 {
+    height: 5px;
+    background: #0033cc;
+  }
+
+  .section2 .line1 {
+    height: 5px;
+    background: #0066ff;
+  }
+
+  .section3 .line1 {
+    height: 5px;
+    background: #3399ff;
+  }
+  
 .carte{
     background-color: #fff;
     font-family: 'Dancing Script', cursive;
