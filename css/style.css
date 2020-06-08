@@ -41,7 +41,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 3.5rem;
-    height: 20rem;
+    height: 40rem;
     width: 35%;
     box-shadow: 0px 0px 6px 0px grey;
 }
@@ -215,8 +215,8 @@ footer a:hover {
     }
 
     .menu {
-        height: 15rem;
-        width: 45%;
+        height: 30rem;
+        width: 80%;
     }
 
     .point {
@@ -229,11 +229,17 @@ footer a:hover {
     .menu a {
         font-size: 18px;
     }
+    .menu  {
+        height: 30rem;
+    }
 }
 
 @media (min-width: 901px) and (max-width: 1440px) {
     .menu a {
         font-size: 25px;
+    }
+    .menu  {
+        height: 30rem;
     }
 }
 
