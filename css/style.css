@@ -219,6 +219,10 @@ footer a:hover {
         width: 80%;
     }
 
+    .menu a {
+        font-size: 30px;
+    }
+
     .point {
         width: 15px;
         padding-right: .7rem;
